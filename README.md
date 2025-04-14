@@ -44,6 +44,10 @@ streamlit run app.py
 - Watermark text: Change in add_watermark() function in model.py.
 - Video source: Modify cv2.VideoCapture() to use webcam or another file.
 - Model path: Replace model_path in app.py and model.py with your own .h5 model file.
+## 🖼️ Example Output
+Here’s how the watermarked result looks when a deepfake is detected:
+![Image](https://github.com/user-attachments/assets/063b5f23-03bb-410d-9b1b-f0f617563130)
+![Image](https://github.com/user-attachments/assets/833f0435-abea-4f50-b0bf-0d472b3ba439)
 
 ## 📬 Feedback & Contributions
 - Feel free to open issues, submit pull requests, or fork the repo to improve it. Let’s fight deepfakes together!
