@@ -8,18 +8,20 @@ This project detects deepfake videos using a custom-trained 3D CNN model. It inc
 
 - 🧠 Deepfake detection using a 3D CNN model trained on video clips.
 - 🎬 Streamlit-based web interface for easy video upload and analysis.
-- 🏷️ Adds a "DEEPFAKE DETECTED" watermark to fake videos.
+- 🏷️ Adds a **"DEEPFAKE DETECTED"** watermark to fake videos.
 - 📩 Sends email alerts with the watermarked video attached.
-- 🧪 Displays prediction result with confidence level.
+- 📊 Displays prediction result with confidence level.
 
 ---
 
 ## 📦 Requirements
 
-Install all necessary dependencies using pip:
+Install all necessary dependencies:
 
 ```bash
 pip install tensorflow opencv-python scikit-learn streamlit keras numpy
+```
+##FileStructure
 deepfake-detector/
 ├── app.py                      # Streamlit frontend
 ├── model.py                    # Deepfake detection class (training, prediction, email)
