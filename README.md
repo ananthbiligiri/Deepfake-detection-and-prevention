@@ -1,19 +1,30 @@
-# 🎬 Deepfake Video Detection and prevention
+# 🎭 Deepfake Video Detector with Email Alerts and Watermarking
 
-A robust deepfake detection system using a 3D CNN model, capable of analyzing video content, watermarking fake frames, and sending email alerts when deepfake content is detected. Built with TensorFlow, OpenCV, and Streamlit.
+This project detects deepfake videos using a custom-trained 3D CNN model. It includes a user-friendly Streamlit app that allows you to upload a video, get real-time predictions, watermark the video if it's fake, and even send an email alert with the watermarked video attached.
 
 ---
 
 ## 🚀 Features
 
-- 📹 Upload `.mp4` or `.mov` video files.
-- 🧠 3D CNN-based Model trained on real and fake videos.
-- 🔍 Displays prediction: **REAL** or **FAKE** with confidence score.
-- 💧 Watermarks fake video frames with “DEEPFAKE DETECTED”.
-- 📧 Sends an **email alert** with the watermarked video attached.
-- 🌐 Easy-to-use **Streamlit Web Interface**.
+- 🧠 Deepfake detection using a 3D CNN model trained on video clips.
+- 🎬 Streamlit-based web interface for easy video upload and analysis.
+- 🏷️ Adds a "DEEPFAKE DETECTED" watermark to fake videos.
+- 📩 Sends email alerts with the watermarked video attached.
+- 🧪 Displays prediction result with confidence level.
 
 ---
 
-## 🏗️ Project Structure
+## 📦 Requirements
 
+Install all necessary dependencies using pip:
+
+```bash
+pip install tensorflow opencv-python scikit-learn streamlit keras numpy
+deepfake-detector/
+├── app.py                      # Streamlit frontend
+├── model.py                    # Deepfake detection class (training, prediction, email)
+├── video_deepfake_detector.h5 # Trained deepfake detection model
+├── dataset/
+│   ├── real/                   # Real training videos
+│   └── fake/                   # Fake training videos
+└── README.md
